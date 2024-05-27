@@ -1,0 +1,44 @@
+#home {
+    display: flex;
+    width: 90%;
+    margin: 100px auto;
+}
+
+#home h1 {
+    font-size: 40px;
+    color: white;
+}
+
+#home h1 span {
+    font-weight: 300;
+    display: block;
+}
+
+#home p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#home img {
+    object-fit: contain;
+    flex: 1;
+    animation: moving 3s linear infinite alternate;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

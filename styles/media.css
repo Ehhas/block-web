@@ -1,0 +1,54 @@
+@media (max-width: 1200px) {
+    #home,
+    #about {
+        margin-top: 0;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 900px) {
+    header .navigation {
+        display: none;
+    }
+
+    #home,
+    #about {
+        flex-direction: column;
+    }
+
+    #home > *,
+    #about > * {
+        width: 100%;
+    }
+    
+    #home img {
+        display: none;
+    }
+
+    #about li {
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        margin-bottom: 20px;
+    }
+
+    #services .block {
+        width: 100%;
+    }
+
+    #services .block:hover {
+        transform: scale(1.05);
+    }
+
+    footer {
+        text-align: center;
+        line-height: 30px;
+    }
+}
